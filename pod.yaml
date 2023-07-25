@@ -1,0 +1,16 @@
+api version: v1
+kind: pod
+meta data:
+  name: satish-pod
+  labels:
+    app: nginx
+spec:
+  containers:
+    - container: satish-cont
+      image: nginx
+      ports:
+        - containerport: 80
+          protocol: TCP
+             
+    
+
