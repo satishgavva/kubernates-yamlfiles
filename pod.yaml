@@ -13,17 +13,5 @@ spec:
         - containerport: 80
           protocol: TCP
              
----
-api version: v1
-kind: service
-meta data:
-  name: satish-service
-  labels:
-    app: nginx
-spec:
-  ports:
-    - nodeport: 32001
-          port: 35000
-          targetport: 80
-  type: Nodeport               
+         
 
