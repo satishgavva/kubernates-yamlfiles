@@ -1,5 +1,5 @@
 ---
-api version: v1
+apiversion: v1
 kind: pod
 meta data:
   name: satish-pod
@@ -14,7 +14,7 @@ spec:
           protocol: TCP
              
 ---
-api version: v1
+apiversion: v1
 kind: service
 meta data:
   name: satish-service
