@@ -1,5 +1,5 @@
 ---
-apiversion: v1
+apiVersion: v1
 kind: pod
 metadata:
   name: satish-pod
@@ -7,10 +7,10 @@ metadata:
     app: nginx
 spec:
   containers:
-    - container: satish-cont
+    - name: satish-cont
       image: nginx
       ports:
-        - containerport: 80
+        - containerPort: 80
           protocol: TCP
              
          
