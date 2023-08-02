@@ -1,7 +1,7 @@
 ---
 apiVersion: v1
 kind: Pod
-meta data:
+metadata:
   name: sujata-pod
   labels:
     app: nginx
@@ -10,7 +10,7 @@ spec:
     - name: suji-cont
       image: nginx
       ports:
-        - containerport: 80
+        - containerPort: 80
           protocol: TCP
              
 ---
