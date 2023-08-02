@@ -22,9 +22,9 @@ metadata:
     app: nginx
 spec:
   ports:
-    - nodeport: 32001
+    - nodePort: 32001
       port: 35000
-      targetport: 80
+      targetPort: 80
   selector: 
     app: nginx   
   type: Nodeport               
