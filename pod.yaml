@@ -1,7 +1,7 @@
 ---
-api version: v1
+apiversion: v1
 kind: pod
-meta data:
+metadata:
   name: satish-pod
   labels:
     app: nginx
