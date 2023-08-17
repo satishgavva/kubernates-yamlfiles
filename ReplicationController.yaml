@@ -1,0 +1,23 @@
+apiVersion : v1
+kind : ReplicationController
+metadata : 
+  name: satish-rc
+  labels:
+    app: nginx
+spec:
+  minReadySeconds: 5
+  replicas: 5
+  selector:
+    app: nginx
+  template:
+    metadata:
+      name: satish-pod
+      labels:
+        app: nginx  
+    spec:
+      containers:
+        - name: satish-con
+          image: nginx
+          ports:
+            - containerPort: 80
+              protocol: TCP
