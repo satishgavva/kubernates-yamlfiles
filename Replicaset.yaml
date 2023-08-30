@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: satish-rs
+  labels:
+    app: nginx
+spec:
+  minReadySeconds: 5
+  replicas: 5
+  selector:
+    matchExpressions:
+      - key: app
+        operator: In
+        values: nginx
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      name: satish-pod
+      labels:
+        app: nginx
+     spec:
+       containers:
+         - name: satish-cont
+           image: app-nginx
+           ports:
+             - containerPort: 80
+               protocol: TCP   
