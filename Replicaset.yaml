@@ -20,10 +20,10 @@ spec:
       name: satish-pod
       labels:
         app: nginx
-     spec:
-       containers:
-         - name: satish-cont
-           image: nginx
-           ports:
-             - containerPort: 80
-               protocol: TCP   
+    spec:
+      containers:
+        - name: satish-cont
+          image: nginx
+          ports:
+            - containerPort: 80
+              protocol: TCP   
