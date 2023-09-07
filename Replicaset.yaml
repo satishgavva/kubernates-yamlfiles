@@ -23,7 +23,7 @@ spec:
      spec:
        containers:
          - name: satish-cont
-           image: app-nginx
+           image: nginx
            ports:
              - containerPort: 80
                protocol: TCP   
