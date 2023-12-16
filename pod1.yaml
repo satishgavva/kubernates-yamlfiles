@@ -4,7 +4,7 @@ kind : pod
 metadata: 
   name: satish-pod
   labels:
-    satishgavva/dockerchange: bitcoinv1
+    app: dev
 spec:
   - containers:
       name: satish-cont
@@ -19,13 +19,13 @@ kind : service
 metadata:
   name: satish-service
   labels:
-    satishgavva/dockerchange: bitcoinv1
+    app: dev
 spec:
   - ports:
       - NodePort: 32006
         port: 35000
         targetport: 80
     selector:
-      satishgavva/dockerchange: bitcoinv1
+      app: dev
     type: NodePort      
            
