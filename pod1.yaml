@@ -8,7 +8,7 @@ metadata:
 spec:
   - containers:
       name: satish-cont
-      image: bitcoinv1
+      image: satishgavva/dockerchange:bitcoinv1
       ports:
         - containerport: 80
           protocol: TCP
