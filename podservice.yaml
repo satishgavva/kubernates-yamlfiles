@@ -4,11 +4,11 @@ kind: Pod
 metadata:
   name: sujata-pod
   labels:
-    app: nginx
+    app: suji
 spec:
   containers:
     - name: suji-cont
-      image: nginx
+      image: satishgavva/dockerchange:coffeev1
       ports:
         - containerPort: 80
           protocol: TCP
@@ -19,13 +19,13 @@ kind: Service
 metadata:
   name: satish-service
   labels:
-    app: nginx
+    app: suji
 spec:
   ports:
-    - nodePort: 32001
+    - nodePort: 32008
       port: 35000
       targetPort: 80
   selector: 
-    app: nginx   
+    app: suji  
   type: NodePort               
 
