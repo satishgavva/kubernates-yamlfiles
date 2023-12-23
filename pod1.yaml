@@ -17,7 +17,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: sati-service
+  name: satish-service
   labels:
     app: suji
 spec:
