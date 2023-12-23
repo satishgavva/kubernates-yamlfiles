@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: suji-cont
-      image: satishgavva/dockerchange:loginpage
+      image: satishgavva/dockerchange:bitcoinv1
       ports:
         - containerPort: 80
           protocol: TCP
