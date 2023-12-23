@@ -8,7 +8,7 @@ metadata:
 spec:
   - containers:
       name: satish-cont
-      image: bitcoinv1
+      image: satishgavva/dockerchange:coffeev1
       ports:
         - containerPort: 80
           protocol: TCP
@@ -26,6 +26,6 @@ spec:
         port: 35000
         targetport: 80
     selector:
-      app: dev
+      app: suji
     type: NodePort      
            
