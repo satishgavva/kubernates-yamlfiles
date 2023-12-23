@@ -2,13 +2,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: sujata-pod
+  name: preethi-pod
   labels:
     app: suji
 spec:
   containers:
     - name: suji-cont
-      image: satishgavva/dockerchange:coffeev1
+      image: satishgavva/dockerchange:loginpage
       ports:
         - containerPort: 80
           protocol: TCP
@@ -17,7 +17,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: satish-service
+  name: sati-service
   labels:
     app: suji
 spec:
