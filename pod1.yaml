@@ -22,7 +22,7 @@ metadata:
     app: suji
 spec:
   ports:
-    - nodePort: 32008
+    - nodePort: 32006
       port: 35000
       targetPort: 80
   selector: 
