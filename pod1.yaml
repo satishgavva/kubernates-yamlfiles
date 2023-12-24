@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: preethi-pod
   labels:
-    app: suji
+    app: preethi
 spec:
   containers:
     - name: suji-cont
@@ -17,15 +17,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: satish-service
+  name: preethi-service
   labels:
-    app: suji
+    app: preethi
 spec:
   ports:
     - nodePort: 32006
       port: 35000
       targetPort: 80
   selector: 
-    app: suji  
+    app: preethi  
   type: NodePort               
 
