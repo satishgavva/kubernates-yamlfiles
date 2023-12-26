@@ -2,14 +2,14 @@ apiVersion: v1
 kind : Pod
 metadata: 
   name: sat-ready
-  label: 
+  labels: 
     app: suji
 spec:
   containers:
     - name: suji-container
       image: satishgavva/dockerchange:coffeev1
       ports:
-        - containerport: 80
+        - containerPort: 80
           protocol: TCP 
       readinessProbe: 
         httpGet:
