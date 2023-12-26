@@ -1,5 +1,5 @@
-apiVersion: V1
-kind : pod
+apiVersion: v1
+kind : Pod
 metadata: 
   name: sat-ready
   label: 
