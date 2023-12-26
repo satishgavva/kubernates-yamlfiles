@@ -1,3 +1,4 @@
+apiVersion: V1
 kind : pod
 metadata: 
   name: sat-startup
