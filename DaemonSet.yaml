@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: satish-daemon
+  labels:
+    app: suji
+spec:
+  minReadySeconds: 10
+  selector:
+    matchLabels:
+      app: suji
+  template:
+    metadata: 
+      name: satish-pod
+      labels:
+        app: suji
+    spec:
+      containers:
+        - name: satish-cont
+          image: satishgavva/dockerchange:coffeev1
+          ports:
+            - ContainerPort: 80
+              protocol: TCP         
