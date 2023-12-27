@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: suji
 spec:
-  minReadySeconds: 20
+  minReadySeconds: 15
   replicas: 5
   selector:
     matchLabels:
