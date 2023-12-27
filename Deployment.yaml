@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: satish-deployment
+  labels: 
+    app: suji
+spec:
+  minReadySeconds: 20
+  replicas: 5
+  selector:
+    matchLabels:
+      app: suji
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      name: satishpod-deploy
+      labels:
+        app: suji
+    spec:
+      containers:
+        - name: satishcontainer-deploy
+          image: satishgavva/dockerchange:coffeev1
+          ports:
+            - containerPort: 80
+              protocol: TCP    
+
