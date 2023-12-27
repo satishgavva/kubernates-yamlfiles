@@ -20,11 +20,12 @@ spec:
       name: satishpod-deploy
       labels:
         app: suji
+        version: 2.7.1
     spec:
       containers:
         - name: satishcontainer-deploy
           image: satishgavva/dockerchange:coffeev1
           ports:
-            - containerPort: 80
+            - containerPort: 8080
               protocol: TCP    
 
