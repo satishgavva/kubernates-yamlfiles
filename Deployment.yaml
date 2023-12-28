@@ -20,11 +20,11 @@ spec:
       name: satishpod-deploy
       labels:
         app: suji
-        version: 2.60.3
+        version: 2.438
     spec:
       containers:
         - name: satishcontainer-deploy
-          image: jenkins:2.60.3
+          image: jenkins/jenkins:2.438-alpine-jdk21
           ports:
             - containerPort: 8080
               protocol: TCP    
