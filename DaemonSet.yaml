@@ -19,5 +19,5 @@ spec:
         - name: satish-cont
           image: satishgavva/dockerchange:coffeev1
           ports:
-            - ContainerPort: 80
+            - containerPort: 80
               protocol: TCP         
