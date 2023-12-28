@@ -8,7 +8,7 @@ spec:
   ports:
     - nodePort: 32008
       port: 35000
-      targetPort: 80
+      targetPort: 8080
   selector: 
     app: suji  
   type: NodePort   
