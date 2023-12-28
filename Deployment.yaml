@@ -20,10 +20,11 @@ spec:
       name: satishpod-deploy
       labels:
         app: suji
+        version: 1.625.1
     spec:
       containers:
         - name: satishcontainer-deploy
-          image: jenkins/jenkins
+          image: jenkins:1.625.1
           ports:
             - containerPort: 8080
               protocol: TCP    
