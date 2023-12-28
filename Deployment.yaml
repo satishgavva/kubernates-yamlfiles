@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: satishcontainer-deploy
-          image: jenkins/jenkins:2.438-alpine-jdk21
+          image: jenkins/jenkins
           ports:
             - containerPort: 8080
               protocol: TCP    
