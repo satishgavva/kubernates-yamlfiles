@@ -20,7 +20,7 @@ spec:
       name: satishpod-deploy
       labels:
         app: suji
-        version: 2.7.1
+        version: 1.625.1
     spec:
       containers:
         - name: satishcontainer-deploy
